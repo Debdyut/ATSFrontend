@@ -15,12 +15,33 @@
 	body {
 	
 		background: url("../images/airplane.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;
 	
 	}
 
 	label {
 	
 		font-weight: bold;
+	
+	}
+
+	.invoice {
+		
+		background-color: rgba(255, 255, 255, .9);
+		padding: 50px;
+		margin-bottom: 50px;
+		border-radius: 5%;
+	
+	}
+
+	@media only screen and (max-width: 992px) {
+	
+		.invoice {
+		
+			border-radius: 0;
+		
+		}
 	
 	}
 
@@ -79,7 +100,7 @@
 		
 	<div class="wrapper container" style="margin-top: 100px;">
 	
-		<div class="offset-sm-3 col-sm-6" style="background-color: rgba(255, 255, 255, .9); border-radius: 5%; padding: 50px">
+		<div class="invoice offset-sm-3 col-sm-6">
 			
 			<div class="container" style="text-align: center">
 				<h1>Pro-forma Invoice</h1>
